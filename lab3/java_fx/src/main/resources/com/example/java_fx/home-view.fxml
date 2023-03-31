@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_fx.HomeController">
+   <children>
+      <Button fx:id="adminButton" layoutX="180.0" layoutY="149.0" mnemonicParsing="false" onAction="#onAdminButtonClicked" prefHeight="39.0" prefWidth="238.0" text="Администратор" />
+      <Button fx:id="userButton" layoutX="180.0" layoutY="232.0" mnemonicParsing="false" onAction="#onUserButtonClicked" prefHeight="39.0" prefWidth="238.0" text="Пользователь" />
+      <Label layoutX="174.0" layoutY="54.0" text="Туристические планы">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

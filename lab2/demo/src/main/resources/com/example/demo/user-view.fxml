@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UserController">
+   <children>
+      <Label layoutX="250.0" layoutY="41.0" prefHeight="32.0" prefWidth="120.0" text="User panel">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="45.0" layoutY="90.0" prefHeight="237.0" prefWidth="302.0">
+         <columns>
+            <TableColumn id="destinationColumn" fx:id="destinationColumn" prefWidth="137.6000518798828" text="Destination" />
+            <TableColumn id="priceColumn" fx:id="priceColumn" prefWidth="161.5999755859375" text="Price" />
+         </columns>
+      </TableView>
+      <Button fx:id="viewToursButton" layoutX="197.0" layoutY="129.0" mnemonicParsing="false" onAction="#onViewToursClick" prefHeight="32.0" prefWidth="206.0" text="View tours" />
+      <Button fx:id="addFilterButton" layoutX="199.0" layoutY="193.0" mnemonicParsing="false" onAction="#onAddFilterClick" prefHeight="32.0" prefWidth="205.0" text="Add filter for destination" />
+      <Button fx:id="viewPrivelegedDestinationsButton" layoutX="199.0" layoutY="263.0" mnemonicParsing="false" onAction="#onViewPrivelegedClick" prefHeight="32.0" prefWidth="205.0" text="View privileged destinations" />
+      <Label fx:id="toMainMenu" layoutX="14.0" layoutY="14.0" onMouseClicked="#onToMainMenuClicked" text="&lt;-" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
